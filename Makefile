@@ -60,6 +60,6 @@ clean-all: clean-general ## Delete all "junk" files
 ##==================================================================================================
 ##@ Miscellaneous
 
-update-pre-commit-hooks:
+update-pre-commit-hooks:  ## Bump pre-commit hooks versions
 	pre-commit autoupdate
 .PHONY: update-pre-commit-hooks
