@@ -43,6 +43,7 @@ from_first = false
 [tool.semantic_release]
 version_variable = [
   "pyproject.toml:version",
+  "src/__main__.py:version",
   "src/__init__.py:__version__"
 ]
 version_pattern = [
