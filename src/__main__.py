@@ -7,7 +7,7 @@ from .api import courses, sections, users
 app = FastAPI(
     title="Fast API LMS",
     description="LMS for managing students and courses.",
-    version="0.2.0",
+    version="0.2.1",
     contact={
         "name": "Gleb Khaykin",
         "email": "khaykingleb@gmail.com",
