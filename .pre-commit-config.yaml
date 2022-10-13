@@ -19,11 +19,13 @@ repos:
     rev: 22.8.0
     hooks:
     - id: black
+      exclude: ^src/db/models/alembic/versions
 
   - repo: https://gitlab.com/pycqa/flake8
     rev: 3.9.2
     hooks:
     - id: flake8 # C90, E, F, W
+      exclude: ^src/db/models/alembic
       additional_dependencies:
         - darglint==1.8.1  # DAR
         - flake8-annotations==2.7.0  # ANN
@@ -41,6 +43,7 @@ repos:
     rev: v1.4.0
     hooks:
       - id: detect-secrets
+        exclude: ^src/db/models/alembic
         args: ["--baseline", ".secrets.baseline"]
 
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook

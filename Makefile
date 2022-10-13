@@ -31,9 +31,8 @@ repo-init: repo-pre-commit repo-deps repo-env ## Initialize repository by execut
 ##==================================================================================================
 ##@ Secrets
 
-create-detect-secrets-baseline:  ## Create or update .secrets.baseline file
+gen-detect-secrets-baseline:  ## Create or update .secrets.baseline file
 	poetry run detect-secrets scan > .secrets.baseline
-.PHONY: create-detect-secrets-baseline
 
 ##==================================================================================================
 ##@ Checks
@@ -60,6 +59,11 @@ clean-all: clean-general ## Delete all "junk" files
 ##==================================================================================================
 ##@ Miscellaneous
 
-update-pre-commit-hooks:  ## Bump pre-commit hooks versions
+upd-pre-commit-hooks:  ## Bump pre-commit hooks versions
 	pre-commit autoupdate
-.PHONY: update-pre-commit-hooks
+
+gen-migration:  ## Generate RDS migration file (e.g., make gen-migration msg="initial schema")
+	cd src/db/models && poetry run alembic revision --autogenerate -m "$(msg)"
+
+run-migration:  ## Run RDS migration file
+	cd src/db/models && poetry run alembic upgrade head
