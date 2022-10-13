@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.0 (2022-10-13)
+### Feature
+* Init alembic ([`3c1cf4d`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/3c1cf4db5354420d09f738c622693d36ce83229b))
+
 ## v0.3.0 (2022-10-13)
 ### Feature
 * Database setup ([`7d7b603`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/7d7b6032c200f2432d763addd3627617a11b5a9a))
