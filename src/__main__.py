@@ -12,7 +12,7 @@ course.Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="Fast API LMS",
     description="LMS for managing students and courses.",
-    version="0.2.1",
+    version="0.3.0",
     contact={
         "name": "Gleb Khaykin",
         "email": "khaykingleb@gmail.com",

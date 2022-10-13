@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2022-10-13)
+### Feature
+* Database setup ([`7d7b603`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/7d7b6032c200f2432d763addd3627617a11b5a9a))
+
 ## v0.2.1 (2022-10-13)
 ### Fix
 * :bug: ([`4918962`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/49189626fab71319e9c4b42fe19bae0a08a4f745))
