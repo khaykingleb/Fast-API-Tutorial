@@ -5,7 +5,10 @@ import typing as tp
 import fastapi
 from pydantic import BaseModel
 
-router = fastapi.APIRouter()
+router = fastapi.APIRouter(
+    prefix="/users",
+    tags=["users"],
+)
 
 users = []
 
@@ -16,17 +19,17 @@ class User(BaseModel):  # NOQA
     bio: tp.Optional[str]
 
 
-@router.post("/users")
+@router.post("/")
 async def create_user(user: User):  # NOQA
     users.append(user)
     return "Success"
 
 
-@router.get("/users", response_model=tp.List[User])
+@router.get("/", response_model=tp.List[User])
 async def get_users():  # NOQA
     return users
 
 
-@router.get("/users/{id}")
+@router.get("/{id}")
 async def get_user(id: int):  # NOQA
     return {"user": users[id]}

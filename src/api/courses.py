@@ -2,34 +2,37 @@
 
 import fastapi
 
-router = fastapi.APIRouter()
+router = fastapi.APIRouter(
+    prefix="/courses",
+    tags=["courses"],
+)
 
 
-@router.get("/courses")
+@router.get("/")
 async def read_courses():  # NOQA
     return {"courses": []}
 
 
-@router.post("/courses")
+@router.post("/")
 async def create_course_api():  # NOQA
     return {"courses": []}
 
 
-@router.get("/courses/{id}")
+@router.get("/{id}")
 async def read_course():  # NOQA
     return {"courses": []}
 
 
-@router.patch("/courses/{id}")
+@router.patch("/{id}")
 async def update_course():  # NOQA
     return {"courses": []}
 
 
-@router.delete("/courses/{id}")
+@router.delete("/{id}")
 async def delete_course():  # NOQA
     return {"courses": []}
 
 
-@router.get("/courses/{id}/sections")
+@router.get("/{id}/sections")
 async def read_course_sections():  # NOQA
     return {"courses": []}

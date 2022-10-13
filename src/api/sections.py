@@ -2,15 +2,18 @@
 
 import fastapi
 
-router = fastapi.APIRouter()
+router = fastapi.APIRouter(
+    prefix="/sections",
+    tags=["sections"],
+)
 
 
-@router.get("/sections/{id}")
+@router.get("/{id}")
 async def read_section():  # NOQA
     return {"courses": []}
 
 
-@router.get("/sections/{id}/content-blocks")
+@router.get("/{id}/content-blocks")
 async def read_section_content_blocks():  # NOQA
     return {"courses": []}
 
