@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.7.0 (2022-10-14)
+### Feature
+* Async session for sqlalchemy and example how to use it ([`f79ed15`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/f79ed15ea830f94977d383a4cfaa19026fc420f3))
+
+### Documentation
+* Add link to the tutorial ([`d14a699`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/d14a69948799fdd6f254e397f1990f1aa23a8f12))
+
 ## v0.6.1 (2022-10-14)
 ### Fix
 * :bug: complete cousres section ([`aa3cb27`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/aa3cb27563f0a5776670226b42a2ef4adcbd13f7))
