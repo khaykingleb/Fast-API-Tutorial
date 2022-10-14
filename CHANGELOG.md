@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.0 (2022-10-14)
+### Feature
+* Add schemas for users section ([`5138919`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/5138919967385392377ca6d8051a2a8a4c5c78b6))
+
 ## v0.4.0 (2022-10-13)
 ### Feature
 * Init alembic ([`3c1cf4d`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/3c1cf4db5354420d09f738c622693d36ce83229b))
