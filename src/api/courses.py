@@ -4,7 +4,7 @@ import fastapi
 
 router = fastapi.APIRouter(
     prefix="/courses",
-    tags=["courses"],
+    tags=["Courses"],
 )
 
 

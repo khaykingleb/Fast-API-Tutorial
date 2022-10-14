@@ -4,7 +4,7 @@ import fastapi
 
 router = fastapi.APIRouter(
     prefix="/sections",
-    tags=["sections"],
+    tags=["Sections"],
 )
 
 
