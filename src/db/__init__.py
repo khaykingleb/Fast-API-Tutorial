@@ -13,3 +13,11 @@ session = sessionmaker(autocommit=False, autoflush=False, bind=engine, future=Tr
 
 Base = declarative_base()
 DBTable = tp.Type[Base]
+
+
+def get_db():  # NOQA
+    db = session()
+    try:
+        yield db
+    finally:
+        db.close()
