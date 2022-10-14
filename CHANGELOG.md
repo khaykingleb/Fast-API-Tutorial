@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.6.0 (2022-10-14)
+### Feature
+* Complete users section ([`9ddbc27`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/9ddbc27d139dfa72f8eedb43887514131966a630))
+
 ## v0.5.1 (2022-10-14)
 ### Fix
 * :bug: ([`8caf2d1`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/8caf2d1a29a4d7616d7c47c57d908532a615ac45))
