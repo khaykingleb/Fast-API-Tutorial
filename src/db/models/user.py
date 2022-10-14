@@ -9,7 +9,7 @@ from .mixins import Timestamp
 from .. import Base
 
 
-class Role(enum.Enum):  # NOQA
+class Role(enum.IntEnum):  # NOQA
     teacher = 1
     student = 2
 
@@ -23,6 +23,8 @@ class User(Timestamp, Base):  # NOQA
     is_active = Column(Boolean, default=False)
 
     profile = relationship("Profile", back_populates="owner", uselist=False)
+    student_courses = relationship("StudentCourse", back_populates="student")
+    student_content_blocks = relationship("CompletedContentBlock", back_populates="student")
 
 
 class Profile(Timestamp, Base):  # NOQA
