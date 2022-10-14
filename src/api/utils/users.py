@@ -1,4 +1,4 @@
-"""Utilities for users."""
+"""Utilities for Users section."""
 
 from sqlalchemy.orm import Session
 
