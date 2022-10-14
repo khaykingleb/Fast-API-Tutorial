@@ -4,10 +4,11 @@ import typing as tp
 
 import fastapi
 from fastapi import Depends, HTTPException
+from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import Session
 
 from .utils import users as users_utils
-from ..db import get_db
+from ..db import async_get_db, get_db
 from ..schemas.user import User, UserCreate
 
 router = fastapi.APIRouter(
@@ -39,8 +40,8 @@ async def get_users(  # NOQA
 
 
 @router.get("/{id}", response_model=User)
-async def get_user(*, db: Session = Depends(get_db), id: int) -> User:  # NOQA
-    db_user = users_utils.get_user(db, id)
+async def get_user(*, db: AsyncSession = Depends(async_get_db), id: int) -> User:  # NOQA
+    db_user = await users_utils.get_user(db, id)
     if db_user is None:
         raise HTTPException(status_code=404, detail="User not found.")
     return db_user
