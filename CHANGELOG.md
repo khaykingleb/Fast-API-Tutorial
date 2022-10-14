@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.6.1 (2022-10-14)
+### Fix
+* :bug: complete cousres section ([`aa3cb27`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/aa3cb27563f0a5776670226b42a2ef4adcbd13f7))
+* :bug: request body for course ([`e64300d`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/e64300d4890f139440c93b8242ddd5577625b19e))
+
 ## v0.6.0 (2022-10-14)
 ### Feature
 * Complete users section ([`9ddbc27`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/9ddbc27d139dfa72f8eedb43887514131966a630))
