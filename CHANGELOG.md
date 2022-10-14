@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.1 (2022-10-14)
+### Fix
+* :bug: ([`8caf2d1`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/8caf2d1a29a4d7616d7c47c57d908532a615ac45))
+
 ## v0.5.0 (2022-10-14)
 ### Feature
 * Add schemas for users section ([`5138919`](https://github.com/khaykingleb/Fast-API-Tutorial/commit/5138919967385392377ca6d8051a2a8a4c5c78b6))
